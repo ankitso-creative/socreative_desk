@@ -1,0 +1,1297 @@
+/* 
+Design By: So-Creative
+ */
+/* Font Style */
+/* @font-face {
+    font-family: 'Frank Ruhl Libre';
+    src: url('../fonts/FrankRuhlLibre-Black.woff2') format('woff2'),
+        url('../fonts/FrankRuhlLibre-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+} */
+@font-face {
+    font-family: 'Hero New Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Regular'), url('../fonts/Hero New Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Hero New Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Regular Italic'), url('../fonts/Hero New Regular Italic.woff') format('woff');
+}
+    
+
+    @font-face {
+    font-family: 'Hero New Hairline';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Hairline'), url('../fonts/Hero New Hairline.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Hairline Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Hairline Italic'), url('../fonts/Hero New Hairline Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Thin'), url('../fonts/Hero New Thin.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Thin Italic'), url('../fonts/Hero New Thin Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New UltraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New UltraLight'), url('../fonts/Hero New UltraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New UltraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New UltraLight Italic'), url('../fonts/Hero New UltraLight Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Light'), url('../fonts/Hero New Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Light Italic'), url('../fonts/Hero New Light Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Medium'), url('../fonts/Hero New Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Medium Italic'), url('../fonts/Hero New Medium Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New SemiBold'), url('../fonts/Hero New SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New SemiBold Italic'), url('../fonts/Hero New SemiBold Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Bold'), url('../fonts/Hero New Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Bold Italic'), url('../fonts/Hero New Bold Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New ExtraBold'), url('../fonts/Hero New ExtraBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New ExtraBold Italic'), url('../fonts/Hero New ExtraBold Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Hero New Super';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Super'), url('../fonts/Hero New Super.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: '../fonts/Hero New Super Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Hero New Super Italic'), url('Hero New Super Italic.woff') format('woff');
+    }
+/* Font Style End */
+body {
+    font-family: 'Hero New Light';
+    font-weight: 300;
+    font-size: 14px;
+	overflow-x:hidden;
+}
+body{
+	color: #484848 !important;
+}
+body p{
+	font-family: 'Hero New Light';
+    font-weight: 300;
+    font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Hero New Bold' !important;
+}
+button, input, optgroup, select, textarea {
+    font-family: 'Hero New Light' !important;
+}
+.form-control {
+    font-size: 14px !important;
+}
+.dropdown-menu {
+    font-size: 14px !important;
+}
+ /* Login Page CSS*/
+.login_banner {
+    /* background: url('../images/login-banner.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    background: #fee6de;
+}
+.login_banner .page-content--bge5 {
+    background: transparent !important;
+    height: auto !important;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login_banner .login-wrap {
+    max-width: 432px !important;
+    margin: auto !important;
+    /* height: 100vh !important; */
+    padding-top: 0 !important;
+}
+.home-logo {
+    margin-bottom: 30px;
+    width: 60%;
+}
+.welcome_sec {
+    padding-bottom: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 26px;
+}
+.login-text {
+    font-family: 'Hero New Regular';
+    font-weight: 400;
+}
+.login-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 15px;
+}
+.login_banner .login-form button, .login_banner .login-form input[type="submit"] {
+    width: 50%;
+    margin: 20px auto 20px auto;
+    border-radius: 50px;
+    background: #DA6E47 !important;
+    transition: 0.5s;
+    border: none;
+	line-height:45px;
+}
+.forget_password_sec .btn {
+    line-height: 34px !important;
+}
+.login_banner .login-form button:hover, .login_banner .login-form input[type="submit"]:hover {
+    background: #000 !important;
+	box-shadow:none !important;
+}
+.login_banner .login-form button:focus, .login_banner .login-form input[type="submit"]:focus {
+	box-shadow:none !important;
+}
+.login-content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+.login-checkbox label {
+    display: block;
+    width: 100%;
+}
+.login-form .form-group label {
+  
+}
+.login-checkbox > label > a {
+    color: #DA6E47;
+}
+.login-checkbox > label > a:hover {
+    color: #000;
+	text-decoration: underline;
+}
+
+ /* Login Page CSS End*/
+/* header CSS */
+.header-main {
+    background: #f5f5f5;
+    padding: 15px 0px;
+    box-shadow: 0px 2px 5px 0px #f5f5f5;
+}
+.header-main .header-logo {
+    width: 60%;
+}
+.menu_header {
+    border-bottom: none !important;
+}
+.menu_header .dropdown a {
+    color: #000;
+    border: 1px solid transparent !important;
+}
+.menu_header .dropdown a:hover {
+    border: 1px solid transparent !important;
+}
+.header-main .nav-tabs .nav-item.show .nav-link,  .header-main .nav-tabs .nav-link.active {
+    color: #000 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+ .header-main .dropdown-item.active,  .header-main .dropdown-item:active {
+    background-color: #f5f5f5 !important;
+}
+.header-desktop .account-dropdown {
+    min-width: 203px !important;
+	top:43px !important;
+}
+.dropdown-item {
+    color: #212529 !important;
+}
+.edit_profile_sec .btn {
+    background: #2b4675 !important;
+    border: none !important;
+    transition: 0.5s;
+    padding: 8px 30px;
+}
+.edit_profile_sec .btn:hover {
+    background: #000 !important;
+}
+.edit_profile_sec .btn:focus {
+   box-shadow:none !important;
+}
+.filter-section .table-responsive {
+    height: 405px;
+    overflow-y: auto;
+}
+.filter-section .btn.btn-outline-link {
+    color: #000;
+}
+.form-header-search .au-input {
+    border-radius: 0px !important;
+    width: 70%;
+}
+.form-header-search .au-btn--submit {
+    height: 46px;
+    top: -5px;
+    left: -4px;
+    border-radius: 0px !important;
+    background: #2b4675;
+}
+.form-header-search .au-btn--submit:hover {
+    background: #000;
+}
+.filter-section {
+    height: 100vh;
+}
+/* header CSS Ends */
+/* Edit Profile CSS  */
+.login_sec form {
+    width: 50%;
+    margin: 0px auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 50px 50px;
+}
+.tasks_list ul {
+    padding-left: 20px;
+}
+/* Edit Profile CSS Ends */
+.filter_menus {
+    border: 1px solid #666;
+    padding: 15px;
+    border-radius: 4px;
+}
+.filter_menus p {
+    border-bottom: 1px solid #C3C3C3 !important;
+    padding-bottom: 4px;
+    color: #484848 !important;
+}
+.filter_menus ul {
+    list-style: none;
+	margin-top:20px;
+}
+.filter_menus ul li {
+    padding: 2px 0px;
+}
+.filter_menus ul li a {
+    color: #000;
+    font-size: 14px !important;
+}
+.filter-section .col-10.col-lg-10 .table th {
+    font-size: 14px !important;
+}
+.filter-section .open {
+    background: #1ab50c;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+	font-size: 12px;
+}
+.filter-section .high {
+    background: #d9534f;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.filter-section .low {
+	background:#1cab3c;
+	color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+	font-size: 12px;
+}
+.filter-section .medium {
+	background:#f0ad4e;
+	color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+	font-size: 12px;
+}
+.await {
+    background: #000;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.new-response {
+    background: #2b4675;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.filter-section .table-earning tbody td {
+    padding: 12px 10px;
+    font-size: 12px;
+    color: #484848;
+}
+.filter-section .table-earning tbody td a {
+    font-size:12px;
+	color: #484848;
+}
+.filter-section .table-earning thead th {
+    padding: 20px 10px;
+}
+.filter_menus-reset {
+    text-align: center;
+}
+.filter_btn .btn-primary {
+    background: #2b4675 !important;
+    border: 1px solid #2b4675;
+}
+.filter_btn .btn-primary:hover{
+	 background: #000 !important;
+    border: 1px solid #000;
+}
+.filter_btn .btn-primary:focus{
+	box-shadow:none;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow:none;
+}
+/* Footer Sec */
+.footer-sec {
+    width: 100%;
+}
+.footer-sec  .copyright {
+    text-align: center;
+    padding: 10px 0;
+}
+.copyright p {
+    color: #000;
+	font-size:13px;
+}
+.copyright p a {
+    color: #DA6E47;
+}
+.copyright p a:hover{
+	color:#000;
+}
+/* Footer Sec End */
+
+/* Main front page */
+.main-banner {
+    background: url('../images/banner-bg-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    min-height: 600px;
+    color: #fff;
+}
+.main-banner h1 {
+    font-size: 48px;
+    color: #121127;
+    text-transform: capitalize;
+    font-family: 'Hero New ExtraBold' !important;
+}
+.main-banner h1 span {
+    color: #d9673f;
+}
+.main-banner h3 {
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+.main-banner p {
+    font-size: 18px;
+    font-weight: 100;
+    color: #818181;
+    padding-top: 10px;
+}
+.main-banner span.focus_text {
+    font-weight: 400;
+}
+.main-banner .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 85%;
+}
+.main-banner .container-fluid {
+    width: 100%;
+    margin: 0px 0px 0px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+header.header-home {
+    position: absolute;
+    width: 100%;
+    top: 25px;
+}
+.main-banner .col-sm-6 img {
+    width: 74%;
+}
+.header-home a.nav-link {
+    text-transform: lowercase;
+    color: #121127;
+    padding: 7px 20px;
+    border-radius: 50px;
+    margin-right: 34px;
+    display: block;
+    min-width: 140px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+	border:none;
+}
+.header-home a.nav-link i{
+	color:#d9673f !important;
+}
+.header-home a.nav-link:hover {
+	color:#d9673f !important;
+	border:none;
+}
+.banner-content-block {
+    padding-top: 66px;
+    padding-left: 55px;
+}
+.form-block .container {
+    background: url('../images/form-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 624px;
+}
+.contact-details h2 {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Hero New SemiBold' !important;
+}
+.contact-details ul {
+    margin: 60px 0 0 0;
+    padding: 0;
+}
+.contact-details ul li {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+    padding: 10px 0 0;
+}
+.contact-details ul li a {
+    color: #fff;
+    font-weight: 400;
+}
+.contact-details {
+    min-height: 500px;
+    padding: 110px 60px 110px 0px;
+}
+.copy_wright_content {
+    font-size: 14px;
+    color: #2b4675;
+    font-weight: 400;
+    position: absolute;
+    bottom: 110px;
+}
+#contact {
+    padding-top: 60px;
+}
+.contact_form_sec input {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.contact_form_sec input::placeholder,
+.contact_form_sec textarea::placeholder{
+	  color: #fff;
+}
+.contact_form_sec textarea {
+    background: transparent;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+    height: 207px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #fff;
+}
+.contact_form_sec .btn.btn-success {
+    background: #fff;
+    color: #0d1333;
+    border-radius: 10px;
+    padding: 10px 72px;
+    height: auto;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.contact_form_sec .btn.btn-success:hover {
+    background: #DA6E47 !important;
+    border: 1px solid #DA6E47;
+    color: #fff !important;
+}
+.contact_form_sec .btn.btn-success:focus{
+	box-shadow:none !important;
+}
+.contact_form_sec {
+    padding: 100px 50px 0;
+}
+.contact_form_sec h2 {
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    font-family: 'Hero New SemiBold' !important;
+    font-size: 25px;
+}
+.copy_wright_content a {
+    color: #DA6E47;
+}
+.copy_wright_content a:hover{
+	color: #000;
+	text-decoration:underline;
+}
+.ticket-sec {
+    width: 90%;
+    margin: 50px auto 0px auto;
+}
+.ticket-sec .row-2 {
+    padding: 30px 0px 0px 0px;
+}
+.ticket-sec .status_menus {
+    background: #fbfbfb;
+    border: 1px solid #ededed;
+}
+.ticket-sec .activity_menus {
+    background: #fbfbfb;
+    border: 1px solid #ededed;
+}
+.ticket-sec .status_menus ul {
+    list-style: none;
+    padding: 10px 0px;
+}
+.ticket-sec .activity_menus ul {
+    list-style: none;
+    padding: 10px 10px 0px 10px;
+    height: 395px;
+    overflow-x: auto;
+}
+.ticket-sec .status_menus p {
+    background: #2b4675;
+    color: #fff;
+    padding: 10px 15px;
+}
+.ticket-sec .activity_menus p {
+    background: #2b4675;
+    color: #fff;
+    padding: 10px 15px;
+}
+.ticket-sec .status_menus ul li {
+    padding: 5px 15px;
+}
+.ticket-sec .activity_menus ul li {
+    padding: 5px 15px 0px 15px;
+    display: block;
+    font-size: 13px;
+    font-style: italic;
+    position: relative;
+}
+.ticket-sec .activity_menus ul li p {
+    padding: 0px;
+    background: transparent;
+    color: #484848;
+    font-size: 13px;
+}
+.ticket-sec .activity_menus ul li::before {
+    content: "\2022";
+    color: #2b4675;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+}
+.ticket-sec .activity_menus ul li span {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: #2b4675;
+    font-family: 'Hero New Medium Italic';
+}
+.ticket-sec .row-2 .col-lg-9.col-9 {
+    background: #fbfbfb;
+    border: 1px solid #ededed;
+    min-height: 726px;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 h3 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 h3 a {
+    color: #333;
+}
+.ticket-sec #message-form {
+    margin-bottom: 20px;
+}
+.login_sec h2 {
+    font-size: 24px;
+}
+.change_pwd {
+    padding-bottom: 10px;
+	padding-top: 10px;
+    text-align: center;
+}
+.change_pwd h3 {
+    font-family: 'Hero New SemiBold' !important;
+    padding-top: 5px;
+}
+.tasks_list .single_image {
+    display: inline;
+}
+.tasks_list {
+    height: 210px;
+    overflow-x: auto;
+}
+.ticket-sec .status_menus ul li select {
+    width: 75%;
+    margin-left: 7px;
+    background: transparent;
+    border: 1px solid #d7e0e2;
+    padding-left: 15px;
+}
+.ticket_heading {
+    padding-top: 10px;
+}
+.ticket-sec .trumbowyg-editor, .ticket-sec .trumbowyg-textarea {
+    min-height: 100px !important;
+}
+.ticket-sec .trumbowyg-box, .ticket-sec .trumbowyg-editor {
+    min-height: 100px !important;
+    background: #fff;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 .btn.btn-sm {
+    background: #2b4675 !important;
+    padding: 6px 30px;
+    font-size: 16px;
+    border: 1px solid #2b4675 !important;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 .btn.btn-sm:hover{
+	 background: #000 !important;
+	  border: 1px solid #000 !important;
+}
+.ticket-sec .row-2 .col-lg-9.col-9 .btn.btn-sm:hover,
+.ticket-sec .row-2 .col-lg-9.col-9 .btn.btn-sm:focus{
+	box-shadow:none;
+	
+}
+.ticket-sec .row-chat {
+    width: 97%;
+    margin: 10px auto 10px 0px;
+    background: #efeded;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px 0px;
+    border: 1px solid #e9e9e9;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.msg_ticket {
+    max-height: 300px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.ticket-sec .row-chat-darker {
+    width: 97%;
+    margin: 30px 0px 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    padding: 15px 0px;
+    border: 1px solid #ffffff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.ticket-sec .row-chat .msg_ticket_img {
+    text-align: center;
+    flex: 0 0 8%;
+    max-width: 8%;
+	padding-right:0px !important;
+}
+.msg_ticket_text {
+    flex: 0 0 92%;
+    max-width: 92%;
+}
+.ticket-sec .row-chat .msg_ticket_img .ticket_user_icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    display: block;
+    margin: 0px auto 0px 0px;
+}
+.msg_ticket_head {
+    font-weight: 700;
+    font-size: 14px !important;
+    font-style: italic;
+}
+.msg_ticket_head .msg_ticket_time {
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 0px;
+    float: right;
+}
+.msg_ticket_para {
+    font-size: 14px;
+}
+.msg_ticket_text  p {
+    font-size: 14px !important;
+    word-break: break-all;
+}
+.ticket-sec .row-chat:after {
+    bottom: 100%;
+    left: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #efeded;
+    border-width: 10px;
+    margin-left: -10px;
+    z-index: 11;
+}
+.ticket-sec .row-chat-darker:after {
+    bottom: 100%;
+    right: 30px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #fff;
+    border-width: 10px;
+    margin-left: -10px;
+    z-index: 11;
+    left: auto;
+}
+.file-container input#js-file-input {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    height: 140px;
+    z-index: 9;
+    position: relative;
+    opacity: 0;
+}
+.file-container .file-content {
+    background: #ECF0F1;
+    text-align: center;
+    height: 170px;
+    width: 95.5%;
+    position: absolute;
+    top: 0;
+    padding: 35px 0;
+}
+.file-container .file-content p {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+.file-container .file-content .file-icon i {
+    display: block;
+}
+.file-container {
+    margin: 25px 0 14px;
+}
+.file-icon img {
+    width: 50px;
+}
+.submit_changes_btn {
+    padding-bottom: 20px;
+}
+.file-container .file-content:before {
+    content: "";
+    border: 2px dashed #000;
+    position: absolute;
+    height: 87%;
+    width: 97%;
+    top: 11px;
+    left: 12px;
+}
+.new-ticket-sec{
+	 background: #e5e5e5;
+}
+.new-ticket-sec .page-content--bge51 {
+    height: auto;
+    width: 70%;
+    margin: 0px auto;
+}
+.new-ticket-sec .card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.new-ticket-sec .trumbowyg-box, .new-ticket-sec .trumbowyg-editor {
+    margin-top: 0px;
+	min-height: 150px !important;
+}
+.new-ticket-sec .trumbowyg-editor, .new-ticket-sec .trumbowyg-textarea {
+    min-height: 150px !important;
+}
+.btn-back {
+    background: #000;
+    border: none;
+    padding: 7px 30px;
+    font-size: 16px;
+}
+.btn-back:hover{
+	background: #2b4675;
+}
+.btn-back:active{
+	background: #2b4675 !important;
+}
+.btn-back:focus{
+	box-shadow:none !important;
+}
+.btn-back-sbmt {
+    background: #2b4675;
+    border: none;
+    padding: 7px 30px;
+    font-size: 16px;
+}
+.btn-back-sbmt:hover{
+	background: #000;
+}
+.btn-back-sbmt:active{
+	background: #000 !important;
+}
+.btn-back-sbmt:focus{
+	box-shadow:none !important;
+}
+.attach-files span {
+    cursor: pointer;
+    color: #2b4675;
+	transition:0.5s;
+}
+.attach-files span:hover {
+    text-decoration: underline;
+}
+.attach-files_img {
+    margin: 20px 0px;
+}
+.attach-files_img img {
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.hold {
+    background: #ed4f4f;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.in-progress {
+    background: #a01497;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.resolved {
+    background: #81d742;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.closed {
+    background: #000000;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.unresolved {
+    background: #1e73be;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+}
+.main_btn {
+    padding-top: 20px;
+}
+.main_btn ul {
+    list-style: none;
+}
+.main_btn ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.main_btn ul li .login_btn {
+    background: #d9673f;
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.main_btn ul li .contact_btn {
+    background: #0d1333;
+    color: #fff;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+.main_btn ul li .login_btn:hover,
+.main_btn ul li .contact_btn:hover{
+	 background: #000;
+}
+.tasks_list h3 {
+    padding-bottom: 10px;
+}
+.tasks_list .task_img {
+    width: 20%;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+}
+.jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button, .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {
+    background: #2b4675 !important;
+    color: #fff !important;
+}
+.jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button.btn-default:hover, .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default:hover {
+    background: #000 !important;
+}
+.para_length_title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 113px;
+}
+.para_length_project {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 119px !important;
+}
+.filter_status_option {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    height: 45px;
+    line-height: 45px;
+}
+.filter_status_option ul, .filter_priority_option ul{
+	list-style:none;
+}
+.filter_status_option .change-ticket-status {
+    width: 70%;
+    outline: none;
+    padding-left: 10px;
+}
+.filter_priority_option {
+    width: 40%;
+    display: inline-block;
+    float: left;
+	 height: 45px;
+    line-height: 45px;
+}
+.filter_priority_option .change-ticket-priority {
+    width: 70%;
+	outline: none;
+	padding-left: 10px;
+}
+.filter_btn button {
+    display: inline-block;
+    margin-right: 10px;
+}
+.filter_btn a{
+	display: inline-block;
+}
+.projects-section .col-2.col-lg-2.ticket_new_btn {
+    padding: 10px 0px !important;
+}
+.ticket_new_test {
+    padding-top: 5px;
+}
+.filter_btn {
+    width: 20%;
+    float: right;
+    padding-top: 5px;
+}
+.new-tickets {
+    border: none !important;
+    padding: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+.new-tickets i {
+    background: #28a745;
+    color: #fff !important;
+    border-radius: 50% !IMPORTANT;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.new-refresh {
+    border: none !important;
+	 padding: 0px 0px;
+	  cursor: pointer;
+}
+.new-refresh i {
+    background: #545b62;
+    color: #fff !important;
+    border-radius: 50% !IMPORTANT;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.all_projects_menus {
+    background: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 10%);
+}
+.all_projects_menus p {
+    background: #333;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+.all_projects_menus ul {
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    height: 351px;
+    overflow-y: auto;
+}
+.all_projects_menus ul li {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.all_projects_menus ul li:nth-of-type(odd) {
+    background: #f5f5f5;
+}
+.all_projects_menus ul li a {
+    color: #484848;
+    font-size: 13px;
+    width: 100%;
+}
+.projects-section .col-2.col-lg-2 {
+    padding: 16px 0px !important;
+}
+.project_active {
+    background: #d5d4d4 !important;
+}
+.project_active a {
+    font-weight: bold;
+}
+.badge-success {
+    color: #fff;
+    font-size: 10px;
+    float: right;
+    padding: 4px 4px;
+}
+.description-box-modal .modal-dialog {
+    max-width: 80%;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) !important;
+    width: 80%;
+    margin: 0px !important;
+}
+.description-box-modal .modal-dialog .btn-submit {
+    margin-top: 20px;
+	background: #2b4675 !important;
+    padding: 6px 30px;
+    font-size: 16px;
+    border: 1px solid #2b4675 !important;
+}
+.description-box-modal .modal-dialog .btn-submit:hover {
+	background: #000 !important;
+    border: 1px solid #000 !important;
+}
+.description-box-modal .modal-dialog .col-md-12 .desc-label {
+	font-family: 'Hero New SemiBold' !important;
+	font-size:20px;
+}
+.message-count {
+    margin-left: 10px;
+    background: #1cab3c;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+/* Media Querry */
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+.main-banner {
+    min-height: 697px;
+}
+.footer-sec {
+    position: fixed;
+    bottom: 0px;
+}
+.filter-section {
+    height: auto;
+}
+.main-banner h1 {
+    font-size: 54px;
+}
+.main-banner p {
+    font-size: 20px;
+}
+.main_btn ul li .login_btn, .main_btn ul li .contact_btn {
+    font-size: 20px;
+}
+}
+@media (min-width: 1900px) and (max-width: 2000px) {
+.home-logo {
+    width: 50%;
+}
+.main-banner h1 {
+    font-size: 70px;
+}
+.main-banner h3 {
+    font-size: 45px;
+}
+.banner-content-block {
+    padding-top: 52px;
+    padding-left: 85px;
+}
+.main-banner p {
+    font-size: 26px;
+}
+.contact-details {
+    padding: 110px 120px;
+}
+.copy_wright_content {
+    font-size: 16px;
+}
+.main-banner {
+    min-height: 950px;
+}
+.contact-details {
+    min-height: 643px;
+    padding: 115px 0px;
+}
+.contact_form_sec {
+    padding: 118px 30px 0;
+}
+.contact_form_sec input {
+    height: 50px;
+    font-size: 14px;
+}
+.contact_form_sec textarea {
+    height: 248px;
+}
+.main_btn ul li .contact_btn,
+.main_btn ul li .login_btn {
+    font-size: 18px;
+}
+}
