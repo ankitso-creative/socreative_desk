@@ -52,7 +52,7 @@
                             <a href=""><i class="fas fa-chart-bar"></i>Dashboard</a>
                         </li>
 						<li class="">
-							<a href=""><i class="fa fa-users"></i>Manage Roles</a>
+							<a href="{{url('admin/roles')}}"><i class="fa fa-users"></i>Manage Roles</a>
 						</li> 
 						<li class="">
                             <a href=""><i class="fa fa-file"></i>Manage Projects <span class="ticket_new">0</span></a>
