@@ -20,11 +20,13 @@ class AdminMiddleware
         if(Auth::check()):
             if(Auth::user()->role_id=='1'):
                 return $next($request);
-            else:
+            elseif(Auth::user()->role_id !='1' ):
                 return redirect('/home')->with('');
+            else:
+                return redirect('/')->with('');
             endif;
         else:
-            return redirect('/home')->with('status','Assce denide');
+            return redirect()->with('');
         endif;
         
     }
