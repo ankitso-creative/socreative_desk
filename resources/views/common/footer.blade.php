@@ -13,8 +13,8 @@
 	<script src="{{ asset('assets/admin/js/custom.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/bootstrap-4.1/popper.min.js') }}"></script>
     <script src="{{ asset('assets/admin/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
-    <!-- Vendor JS       -->
-	<script src="base_url('assets/admin/js/main.js')}}"></script>
+    <!-- Vendor JS       
+	<script src="{{ asset('assets/admin/js/main.js')}}"></script>-->
 
 </body>
 

@@ -25,7 +25,7 @@
 	<link href="{{ asset('assets/admin/css/theme.css') }}" rel="stylesheet" media="all">
 	<link href="{{ asset('assets/admin/css/style.css') }}" rel="stylesheet" media="all">
 	<!-- Jquery JS-->
-    <script src="base_url('assets/admin/')?>vendor/jquery-3.2.1.min.js"></script>
+    <script src="{{ asset('assets/admin/vendor/jquery-3.2.1.min.js') }}"></script>
 
 </head>
 

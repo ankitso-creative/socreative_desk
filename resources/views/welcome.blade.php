@@ -28,7 +28,7 @@ body{
 					Automate. Customize. Prioritize.</p>
 				<div class="main_btn">
 					<ul>
-						<li><a class="login_btn" href="base_url('login');?>">Login</a></li>
+						<li><a class="login_btn" href="{{url('/login')}}">Login</a></li>
 						<li><a class="contact_btn" href="#contact">Contact</a></li>
 					</ul>
 				</div>
