@@ -49,13 +49,13 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="">
-                            <a href=""><i class="fas fa-chart-bar"></i>Dashboard</a>
+                            <a href="{{url('admin/dashboard')}}"><i class="fas fa-chart-bar"></i>Dashboard</a>
                         </li>
 						<li class="">
 							<a href="{{url('admin/roles')}}"><i class="fa fa-users"></i>Manage Roles</a>
 						</li> 
 						<li class="">
-                            <a href=""><i class="fa fa-file"></i>Manage Projects <span class="ticket_new">0</span></a>
+                            <a href="{{url('admin/projects')}}"><i class="fa fa-file"></i>Manage Projects <span class="ticket_new">0</span></a>
 						</li> 
 						<li class="">
 							<a href=""><i class="fas fa-user"></i>Manage Clients</a>
